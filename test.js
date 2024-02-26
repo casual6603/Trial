@@ -6,15 +6,14 @@ let halfViewport = viewportWidth/2
 function basic_movement() {
     const text_elem = document.getElementById("Test");
 
-
     text_elem.animate(
         [
-            {opacity: 0, transform: 'translateX(-100%)'},
-            {opacity: 1, transform: 'translateX(0%)'}
+            {opacity: 0},
+            {opacity: 1}
         ],
         {
             fill: 'forwards',
-            duration: 600,
+            duration: 6000,
             easing: 'ease-in-out'
 
         }
