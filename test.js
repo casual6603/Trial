@@ -7,10 +7,20 @@ function basic_movement() {
     const text_elem = document.getElementById("Test");
 
 
-    text_elem.animate([CSSTranslate(0, 0), CSSTranslate(1000, 0)], {
-    duration: 1000,
-    fill: 'forwards'
-  });
+    text_elem.animate(
+        [
+            {opacity: 0, transform: 'translateX(-100%)'},
+            {opacity: 1, transform: 'translateX(0%)'}
+        ],
+        {
+            fill: 'forwards',
+            duration: 600,
+            easing: 'ease-in-out'
+
+        }
+
+
+    )
 }
 
 window.onload = basic_movement;
